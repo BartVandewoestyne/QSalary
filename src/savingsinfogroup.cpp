@@ -13,3 +13,9 @@ SavingsInfoGroup::SavingsInfoGroup(const QString &title, QWidget *parent)
     mainLayout->addWidget(requestedSavingsLineEdit);
     setLayout(mainLayout);
 }
+
+
+double SavingsInfoGroup::requestedSavings()
+{
+  return requestedSavingsLineEdit->text().toDouble();
+}

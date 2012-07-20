@@ -12,6 +12,7 @@ class SavingsInfoGroup : public QGroupBox
 
 public:
     SavingsInfoGroup(const QString &title, QWidget *parent = 0);
+    double requestedSavings();
 
 private:
     QLabel *requestedSavingsLabel;

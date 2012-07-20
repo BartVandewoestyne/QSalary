@@ -29,6 +29,8 @@ private:
     QLabel *person1TotalSalaryLabel;
     QLabel *person2TotalSalaryLabel;
     QLabel *totalSalaryLabel;
+    QLabel *person1Contribution;
+    QLabel *person2Contribution;
 };
 
 #endif
