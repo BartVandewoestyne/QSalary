@@ -38,7 +38,11 @@ void OutputGroup::updateResult()
   double frac1 = (totalSalary1/totalSalary)*100;
   double frac2 = (totalSalary2/totalSalary)*100;
 
-  person1TotalSalaryLabel->setText("Total salary " + group1->getName() + ": " + QString::number(totalSalary1, 'F', 4) + " (" + QString::number(frac1) + "% of total income)");
-  person2TotalSalaryLabel->setText("Total salary " + group2->getName() + ": " + QString::number(totalSalary2, 'F', 4) + " (" + QString::number(frac2) + "% of total income)");
+  person1TotalSalaryLabel->setText("Total salary " + group1->getName() + ": "
+      + QString::number(totalSalary1, 'f', 2)
+      + " (" + QString::number(frac1, 'f', 2) + "% of total income)");
+  person2TotalSalaryLabel->setText("Total salary " + group2->getName() + ": "
+      + QString::number(totalSalary2, 'f', 2)
+      + " (" + QString::number(frac2, 'f', 2) + "% of total income)");
   totalSalaryLabel->setText("Total salary: " + QString::number(totalSalary));
 }
