@@ -1,0 +1,9 @@
+As a couple, you might have a bank account that you and your partner use to make
+your daily payments for food and stuff.  Some couples might decide that the
+amount of money they each transfer to this bank account depends on the ratio of
+their incomes.  QSalary is a small application that two persons from a household
+can use to decide how much of each's salary should be transferred to a common
+'household' bank account, taking into account the ratio of their incomes.
+
+QSalary is my first experiment with Qt programming.  I just needed *something*
+to implement, so I created this little application.
