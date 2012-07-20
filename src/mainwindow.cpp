@@ -21,6 +21,7 @@ MainWindow::MainWindow()
     OutputGroup *outputGroup = new OutputGroup(tr("Results"), group1, group2, savingsInfoGroup, this);
 
     QPushButton *updateButton = new QPushButton(tr("Update"), this);
+    updateButton->setToolTip(tr("Update the info in the Results group."));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addLayout(personInfoLayout);
